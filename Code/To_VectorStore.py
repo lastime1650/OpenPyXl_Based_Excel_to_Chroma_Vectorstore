@@ -25,8 +25,8 @@ class MITRE_ATTACK_to_VectorStore():
 
         #--
 
-        #sheets = openpyxl.load_workbook(EXEL_FILE_PATH)
-        #self.Save_into_VectorStore(sheets)
+        sheets = openpyxl.load_workbook(EXEL_FILE_PATH)
+        self.Save_into_VectorStore(sheets)
 
 
         print( self.Query("adversaries may patch the authentication process on a domain controller to bypass the typical authentication mechanisms and enable access to accounts. malware may be used to inject false credentials", filter_metadata={"platform": 'Windows'}), True )
